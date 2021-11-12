@@ -1600,7 +1600,7 @@ Please add write permission and try again.""") % webcam_folder)
             wx.LaunchDefaultBrowser(path)
 
     def aboutMenuClicked(self, event):
-        info = wx.AboutDialogInfo()
+        info = wx.adv.AboutDialogInfo()
         info.Name = "Chronolapse"
         info.Version = self.VERSION
         info.Copyright = '(C) 2008-2016 Collin Green'
@@ -1616,7 +1616,7 @@ a front end to mencode to take your series of images and turn them into a movie.
         info.Developers = [ 'Collin "Keeyai" Green']
 
         # Then we call wx.AboutBox giving it that info object
-        wx.AboutBox(info)
+        wx.adv.AboutBox(info)
 
     def iconClose(self, event):
         logging.debug('Closing from taskbar')
